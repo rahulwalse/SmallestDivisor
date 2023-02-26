@@ -18,7 +18,7 @@ int main()
 
         switch (option)
         {
-            case 1: std::cout << "\nEnter a number: ";
+            case 1: std::cout << "\nNOTE: Please enter a non-zero number!\nEnter a number: ";
                     std::cin >> number;
                     std::cout << "\nSmallest divisor of " << number << " is " << smallest_divisor(number) << std::endl;
                     break;
