@@ -16,7 +16,7 @@ int smallest_divisor(const double number)
     else
     {
         //- Calculate the square root of number
-        sqr_root = static_cast<int>(square_root(number));
+        sqr_root = static_cast<int>(square_root(absolute(number)));
         //- Initialize divisor to 3
         divisor = 3;
 
