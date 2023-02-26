@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SmallestDivisor.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Divisor.cpp">
+    <ClCompile Include="SmallestDivisor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
