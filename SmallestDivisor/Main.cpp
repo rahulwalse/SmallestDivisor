@@ -12,7 +12,9 @@ int main()
 
     while (stay)
     {
-        std::cout << "\n1. Find smallest divisor for given number\n2. Exit";
+        std::cout << "\n1. Find smallest divisor for given number";
+        std::cout << "\n2. Find smallest divisor for given number without calculating square root";
+        std::cout << "\n3. Exit";
         std::cout << "\nChoose an option: ";
         std::cin >> option;
 
@@ -23,7 +25,12 @@ int main()
                     std::cout << "\nSmallest divisor of " << number << " is " << smallest_divisor(number) << std::endl;
                     break;
 
-            case 2: std::cout << "\nExiting the program...";
+            case 2: std::cout << "\nNOTE: Please enter a non-zero number!\nEnter a number: ";
+                    std::cin >> number;
+                    std::cout << "\nSmallest divisor of " << number << " is " << smallest_divisor_no_sqrt(number) << std::endl;
+                    break;
+
+            case 3: std::cout << "\nExiting the program...";
                     stay = false;
                     break;
 
