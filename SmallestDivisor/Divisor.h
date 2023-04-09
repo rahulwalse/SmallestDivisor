@@ -9,6 +9,7 @@
 
 int smallest_divisor(const double);
 int smallest_divisor_no_sqrt(const double);
+void all_divisors(const double);
 
 #endif // !DIVISOR_H
 
