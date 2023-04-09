@@ -14,7 +14,7 @@ int main()
     {
         std::cout << "\n1. Find smallest divisor for given number";
         std::cout << "\n2. Find smallest divisor for given number without calculating square root";
-        std::cout << "\n3. Exit";
+        std::cout << "\n3. Find all exact divisors for given number\n4. Exit";
         std::cout << "\nChoose an option: ";
         std::cin >> option;
 
@@ -30,7 +30,13 @@ int main()
                     std::cout << "\nSmallest divisor of " << number << " is " << smallest_divisor_no_sqrt(number) << std::endl;
                     break;
 
-            case 3: std::cout << "\nExiting the program...";
+            case 3: std::cout << "\nNOTE: Please enter a non-zero number!\nEnter a number: ";
+                    std::cin >> number;
+                    std::cout << "All exact divisors of " << number << ": ";
+                    all_divisors(number);
+                    break;
+
+            case 4: std::cout << "\nExiting the program...";
                     stay = false;
                     break;
 
